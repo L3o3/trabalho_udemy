@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> Trabalho Strata </title>
+        <meta charset="utf-8">
+        <meta name="author" content="leoeDW33">
+        <meta name="keyworks" content="tecnologia, html5, css3">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            body {
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                color: #888;
+                line-height: 1.7;
+            }
+            .botao-todo-verde {
+                border: 1px solid transparent;
+                border-radius: 5px;
+                background-color: #49bf9d;
+                padding: 15px;
+                color: white;
+                margin-top: 30px;
+                text-decoration: none;
+                transition: all .5s;
+            }
+            .botao-todo-verde:hover {
+                color: #49bf9d;
+                background-color: white;
+                border: 2px solid #49bf9d;
+            }
+            .botao-todo-branco {
+                color: #49bf9d;
+                background-color: white;
+                border: 2px solid #49bf9d;
+                border-radius: 5px;
+                padding: 15px;
+                margin-top: 30px;
+                text-decoration: none;
+                transition: all .5s;
+            }
+            .botao-todo-branco:hover {
+                border: 1px solid transparent;                
+                background-color: #49bf9d;                
+                color: white;                                                
+            }
+            #header {
+               background-image:url(img/bg.jpg);
+               background-repeat: no-repeat;
+               background-position: center;
+               width: 39%;
+               height: 740px;
+               margin-right: 1%;
+               display: block;
+               float: left;
+               position: fixed;
+               box-sizing: border-box;
+           }
+            #header img {
+               border-radius: 50%;
+               margin-top: 30%;
+               margin-left: 65%; 
+                margin-right: 15px;
+               position: relative;
+           }
+            #header-text {
+               text-align: right;
+               font-size: 12px;
+                color: #bbb:
+               margin-right: 15px;
+           }
+            #header a {
+                color: #ddd;
+                text-decoration: none;
+            }
+            #main-total {
+               width: 59%;
+               height: 100%;
+               margin-left: 1%;
+               float: right;
+               position: absolute, right;
+           }
+            #titulo {
+               padding-top: 50px;
+           }
+            #titulo h2{
+               font-size: 35px; 
+           }
+            #titulo a {
+               padding: 10px;
+               text-decoration: none;
+           }
+            #recent-works {
+               display: block;
+           }
+            #recent-works div {
+               display: inline-block; 
+           }
+            #recent-works img {
+               border-radius: 10px;
+               width: 80%;
+           }
+            #div-form {
+                background-color: aqua;
+                color: black;
+                width: 100%;    
+            }
+            #form-get-in-touch {
+                background-color: blue;
+                width: 60%;
+                display: inline-block;
+            }
+            #form-text {
+                background-color: crimson;
+                width: 48%;
+                display: inline-block;
+                margin-right: 1%;
+            }            
+            #form-email {
+                background-color: green;
+                width: 48%;
+                display: inline-block;
+                margin-left: 1%;    
+            }
+            #form-text input, #form-email input {
+                width: 97%;
+            }
+            #form-mensagem {
+                background-color: orange;
+                width: 99%;
+            }
+            textarea {
+                width: 99%;
+                height: 100px;
+            }
+            #address {
+                background-color: coral;
+                width: 33%;
+                display: inline-block;
+            }
+            blockquote {
+                border-left: 5px solid #ccc;
+                width: 400px;
+                margin: 0;
+            }
+            blockquote p{
+                margin-left: 15px;
+            }
+            #preformatado {
+                background-color: #eee;
+            }
+            #listas {
+                background-color: red;
+                display: block;
+            }
+            #lista-coluna-1 {
+                background-color: green;
+                display: inline-block;
+                width: 49%;
+                height: 300px;
+            }
+            #lista-coluna-2 {
+                background-color: blue;
+                display: inline-block;
+                width: 49%;
+                height: 300px;                
+            }
+
+        </style>
+    </head>
+    <body>
+        <header id="header">
+            <img src="06.01_final/images/avatar.jpg" width="100px" height="100px">
+            <div id="header-text">
+                <h1> Trabalhos e groselhas de <br> <a href="#"> Leonardo de Araujo Bento,</a><br>um Zé ninguem qualquer </h1>
+                <p> Retirado de <a href="#"> html5up.net</a></p>
+            </div>
+        </header>
+        <main id="main-total">
+            <section id="titulo">
+                <h2> Quando o header é aside e o aside é no header </h2>
+                <p> Accumsan orci faucibus id eu lorem semper. 
+                    Eu ac iaculis ac nunc nisi lorem vulputate lorem neque 
+                    cubilia ac in adipiscing in curae lobortis tortor primis 
+                    integer massa adipiscing id nisi accumsan pellentesque 
+                    commodo blandit enim arcu non at amet id arcu magna. 
+                    Accumsan orci faucibus id eu lorem semper nunc nisi 
+                    lorem vulputate lorem neque cubilia. 
+                </p>
+                <a href="#" class="botao-todo-verde"> veja mais </a>
+            </section>
+
+            <section id="recent-works">
+                <h3> Recent Works </h3>
+                    <div>
+                        <div>                        
+                            <img src="06.01_final/images/thumbs/01.jpg">
+                            <p> Magna sed consequat tempus </p>
+                            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat.  </p>
+                        </div>
+                        <div>                        
+                            <img src="06.01_final/images/thumbs/02.jpg">
+                            <p> Quam neque phasellus </p>
+                            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
+                        </div>
+                        <div>                        
+                            <img src="06.01_final/images/thumbs/03.jpg">
+                            <p> Ultricies lacinia interdum </p>
+                            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
+                        </div>
+                        <div>                        
+                            <img src="06.01_final/images/thumbs/04.jpg">
+                            <p> Nunc enim commodo aliquet </p>
+                            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
+                        </div>
+                        <div>                        
+                            <img src="06.01_final/images/thumbs/05.jpg">
+                            <p> Tortor metus commodo </p>
+                            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
+                        </div>
+                        <div>                        
+                            <img src="06.01_final/images/thumbs/06.jpg">
+                            <p> Risus ornare lacinia </p>
+                            <p> Lorem ipsum dolor sit amet nisl sed nullam feugiat. </p>
+                        </div>
+                        <a href="#" class="botao-todo-verde"> Veja Portfólio Completo </a>
+                    </div>
+            </section>
+            <section id="get-in-touch">
+                <h3> Get In Touch </h3>
+                    <p> Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+                    Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor. 
+                    </p>
+                <div id="div-form">
+                    <form>
+                        <div id="form-get-in-touch">
+                            <div id="form-text">
+                                <caption> Nome </caption><br>
+                                <label for="nome"></label> 
+                                 <input type="text" name="nome" id="nome" placeholder="Nome completo" width="100px">
+</div>
+                            <div id="form-email">
+                                <caption> E-mail </caption><br>
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email">
+</div>
+                            <div id="form-mensagem">
+                                <caption> Mensagem </caption><br>
+                                <label for="mensagem"></label>
+                                <textarea name="mensagem" id="mensagem"></textarea><br>
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </div>                    
+                            <div id="address">
+                            <address>
+                                <p><span> Endereço </span> 1234 Somewhere Rd. Nashville, TN 00000 United States </p>
+                                <p><span> Telefone </span> 000-000-000 </p>
+                                <p><span> E-mail </span> email@server.com </p>
+                            </address>
+                            </div>
+                    </form>
+                </div>
+            </section>
+            <section>
+                <h3> Elements </h3>
+                    <h4> Text </h4>
+                    <p> This is <b>bold</b> and this is <strong>strong</strong>. 
+                        This is <i>italic</i> and this is <em>emphasized</em>. 
+                        This is<sup>superscript</sup> text and this is <sub>subscript</sub> text. 
+                        This is <u>underlined</u> and this is <code>code: for (;;) { ... }</code>. 
+                        Finally, this is <a href="#">a link</a>. 
+                    </p> 
+                    <h1> Titulo h1 </h1>
+                    <h2> Titulo h2 </h2>
+                    <h3> Titulo h3 </h3>
+                    <h4> Titulo h4 </h4>
+                    <h5> Titulo h5 </h5>
+                    <h6> Titulo h6 </h6>   
+            </section>
+            <section>
+                <blockquote cite="http://developer.mozilla.org">
+                    <p> Esta é uma citação tirada da Mozilla Developer Center. outros paragráfos </p>
+                </blockquote>
+                    <p> According to Mozilla's website, "Firefox 1.0 was released in 2004 and became a big success."</p>  
+                
+            </section>
+
+            <section> 
+                <h4> Preformatado </h4>
+                <pre id="preformatado"><code>
+    &lt;script&gt;
+        alert('oi');
+    &lt;/script&gt;
+                </code></pre>
+
+            </section> 
+
+                <h4> Listas </h4>           
+                    <div id="listas">
+                        <div id="lista-coluna-1">
+                            <div id="lista-nao-ordenada">
+                                <section>
+                                    <p> Não ordenada </p>
+                                        <ul>
+                                            <li> item 1 </li>
+                                            <li> item 2 </li>
+                                            <li> item 3 </li>
+                                        </ul>
+                                </section>
+                            </div>
+                            <div id="lista-ordenada">
+                                <section>
+                                    <p> Ordenada </p>
+                                        <ol>
+                                            <li> item 1 </li>
+                                            <li> item 2 </li>
+                                            <li> item 3 </li>
+                                        </ol>
+                                </section>
+                            </div>
+                        </div>
+                        
+                        <div id="lista-coluna-2">
+                            <div id="lista-alternate">
+                                <section>
+                                    <p> Alternate </p>
+                                        <ul>
+                                            <li> item 1 </li>
+                                            <li> item 2 </li>
+                                            <li> item 3 </li>
+                                        </ul>
+                                </section>
+                            </div>
+                            
+                            <div id="lista-icons">
+                                    <p> icons </p>
+                                        <ul>
+                                            <li><a href="06.01_final/images/Facebook.svg"></a></li>
+                                            <li><a href="06.01_final/images/twitter.svg"></a></li>
+                                        </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                           
+                        <h4> Actions </h4> 
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+
+                        <h4> Table </h4>
+                            <p> Default </p>
+                                <table>
+                                    <tr>
+                                        <th> Name </th>
+                                        <th> Description </th>
+                                        <th> Price </th>
+                                    </tr>
+                                    <tr>
+                                        <td> Item One </td>
+                                        <td> Ante turpis integer aliquet porttitor. </td>
+                                        <td> 29.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Two </td>
+                                        <td> Vis ac commodo adipiscing arcu aliquet. </td>
+                                        <td> 19.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Three </td>
+                                        <td> Morbi faucibus arcu accumsan lorem. </td>
+                                        <td> 29.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Four </td>
+                                        <td> Vitae integer tempus condimentum. </td>
+                                        <td> 19.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Five </td>
+                                        <td> Ante turpis integer aliquet porttitor. </td>
+                                        <td> 29.99 </td>
+                                    </tr>
+                                </table>
+
+                            <p> Alternate </p>
+                                <table>
+                                    <tr>
+                                        <th> Name </th>
+                                        <th> Description </th>
+                                        <th> Price </th>
+                                    </tr>
+                                    <tr>
+                                        <td> Item One </td>
+                                        <td> Ante turpis integer aliquet porttitor. </td>
+                                        <td> 29.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Two </td>
+                                        <td> Vis ac commodo adipiscing arcu aliquet. </td>
+                                        <td> 19.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Three </td>
+                                        <td> Morbi faucibus arcu accumsan lorem. </td>
+                                        <td> 29.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Four </td>
+                                        <td> Vitae integer tempus condimentum. </td>
+                                        <td> 19.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Item Five </td>
+                                        <td> Ante turpis integer aliquet porttitor. </td>
+                                        <td> 29.99 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> 100.00 </td>
+                                    </tr>
+                                </table>
+
+                            <h4> Buttons </h4>	
+                                <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+                            <div>
+                                <a href="#" class="botao-todo-verde"> Default </a>
+                                <a href="#" class="botao-todo-branco"> Default </a>
+                            </div>
+
+                            <h4> Forms </h4>
+                                <form>
+                                    <label for="nome"> Nome <input type="text" name="nome" id="nome"></label>
+                                    <label for="email"> E-mail <input type="email" name="email" id="email"></label>
+                                    <select>
+                                        <option value="0"> Selecione... </option>
+                                        <option value="1"> HTML5 </option>
+                                        <option value="2"> CSS3 </option>
+                                        <option value="3"> Javascript </option>
+                                    </select>
+                                    <label for="Bprioridade"><input type="radio" name="Bprioridade" id="Bprioridade"> Baixa Prioridade </label>
+                                    <label for="Mprioridade"><input type="radio" name="Mprioridade" id="Mprioridade"> Média Prioridade </label>
+                                    <label for="Aprioridade"><input type="radio" name="Aprioridade" id="Aprioridade"> Alta Prioridade </label>
+                                    <label for="enviacopia"><input type="checkbox" name="enviacopia" id="enviacopia"> Enviar uma cópia </label>
+                                    <label for="souhumano"><input type="checkbox" name="souhumano" id="souhumano"> Sou humano </label>
+                                    <label for="mensagem"> Mensagem: </label>
+                                        <textarea > Digite uma mensagem... </textarea>
+                                </form>
+
+                            <h4> Imagens </h4>
+                                <img src="img/fulls/01.jpg" alt="">
+                                <img src="img/thumbs/01.jpg" alt="">
+                                <img src="img/thumbs/02.jpg" alt="">
+                                <img src="img/thumbs/03.jpg" alt="">
+                                <img src="img/thumbs/02.jpg" alt="">
+                                <img src="img/thumbs/03.jpg" alt="">
+                                <img src="img/thumbs/01.jpg" alt="">
+                                <img src="img/thumbs/03.jpg" alt="">
+                                <img src="img/thumbs/01.jpg" alt="">
+                                <img src="img/thumbs/02.jpg" alt="">
+
+                            <h4> Left & Right </h4>
+                                <img src="../Trabalho 4 (projeto strata)/06.01_final/images/avatar.jpg" alt="homem de perfil">
+                                <p> Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
+                                    tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. 
+                                    Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
+                                    tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. 
+                                    Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent. 
+                                </p>
+
+                                <img src="../Trabalho 4 (projeto strata)/06.01_final/images/avatar.jpg" alt="homem de perfil">
+                                <p> Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
+                                    tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. 
+                                    Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
+                                    tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. 
+                                    Vestibulum ante ipsum primis in faucibus vestibulum. 
+                                    Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
+                                    Integer ac pellentesque praesent. 
+                                </p>
+
+        </main>
+        <footer>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+            <ul>
+                <li> copyright </li>
+            </ul>
+        </footer>
+    </body>
+</html>
